@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css?family=Unica+One|Ubuntu:300|Quicksand:500");
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: #82389e;
+    overflow: hidden;
+}
+
+.crt {
+    background: #a81fe3;
+    width: 300px;
+    height: 190px;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 30px 30px 0 30px;
+    box-sizing: border-box;
+}
+
+.logo {
+    position: absolute;
+    top: 18px;
+    left: 95px;
+    height: 44px;
+    width: 58px;
+}
+
+.logo .obj1,
+.logo .obj2 {
+    position: relative;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+}
+
+.logo .obj1 .curva1,
+.logo .obj1 .curva2,
+.logo .obj2 .curva1,
+.logo .obj2 .curva2 {
+    box-sizing: border-box;
+    position: absolute;
+    border: 2px solid #bbb;
+}
+
+.logo .obj1 .curva1,
+.logo .obj2 .curva1 {
+    top: 10px;
+    left: 0;
+    border-bottom: 0;
+    width: 20px;
+    height: 30px;
+    border-radius: 8px 8px 0 0;
+}
+
+.logo .obj1 .curva1::before,
+.logo .obj2 .curva1::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+    width: 7px;
+    height: 8px;
+    border: 2px solid #bbb;
+    border-top: 0;
+    border-radius: 0 0 2px 2px;
+}
+
+.logo .obj1 .curva2,
+.logo .obj2 .curva2 {
+    top: 2px;
+    left: 9px;
+    border-bottom: 0;
+    width: 20px;
+    height: 38px;
+    border-radius: 7px 17px 0 0;
+}
+
+.logo .obj1 .curva2::before,
+.logo .obj2 .curva2::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    width: 7px;
+    height: 8px;
+    border: 2px solid #bbb;
+    border-top: 0;
+    border-radius: 0 0 2px 2px;
+}
+
+.logo .obj2 {
+    position: absolute;
+    bottom: -8px;
+    right: -3px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.marca {
+    position: absolute;
+    top: 35px;
+    right: 90px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 23px;
+    color: #bbb;
+}
+
+.chip {
+    position: relative;
+    top: 28px;
+    left: 0;
+    background: #d5a878;
+    height: 32px;
+    width: 42px;
+    border: 1px solid #776c58;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.chip .trilha1,
+.chip .trilha2,
+.chip .trilha3,
+.chip .trilha4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #776c58;
+    border-radius: 11px;
+}
+
+.chip .trilha1 {
+    top: -40px;
+    left: -22px;
+}
+
+.chip .trilha2 {
+    top: -26px;
+    left: -38px;
+}
+
+.chip .trilha3 {
+    top: 22px;
+    left: 16px;
+}
+
+.chip .trilha4 {
+    top: 6px;
+    left: 32px;
+}
+
+.numero {
+    font-size: 22px;
+    position: absolute;
+    bottom: 68px;
+    left: 30px;
+}
+
+.numero,
+.inicial,
+.validade,
+.nome {
+    font-family: "Unica One", cursive;
+    color: #e2d4e7;
+    text-shadow: -1px 2px 1px #5b00a5;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+
+.inicial,
+.validade,
+.nome {
+    font-size: 16px;
+}
+
+.data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.data .inicial,
+.data .validade {
+    position: absolute;
+    bottom: 40px;
+}
+
+.data .inicial {
+    left: 40px;
+}
+
+.data .validade {
+    left: 134px;
+    width: 50px;
+}
+
+.validade {
+    position: relative;
+}
+
+.validade::before {
+    width: 70px;
+    word-spacing: normal;
+    font-size: 5px;
+    font-family: "Quicksand", sans-serif;
+    content: 'VALID THRU';
+    color: #aaa;
+    text-shadow: none;
+    position: absolute;
+    top: -7px;
+    left: -3px;
+}
+
+.nome {
+    position: absolute;
+    bottom: 10px;
+    width: 180px;
+}
+
+.masterCrt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    right: 15px;
+    bottom: 25px;
+}
+
+.masterCrt::after {
+    font-family: "Quicksand", sans-serif;
+    content: 'mastercard.';
+    color: #fff;
+    font-size: 11px;
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+}
+
+.masterCrt .elipseV {
+    height: 40px;
+    width: 40px;
+    background: #e41b24;
+    border-radius: 20px;
+    position: absolute;
+    right: 25px;
+    z-index: 1;
+}
+
+.masterCrt .elipseL {
+    height: 40px;
+    width: 40px;
+    background: rgba(255, 0, 0, 0.3);
+    border-radius: 20px;
+    position: absolute;
+    right: 25px;
+    z-index: 3;
+}
+
+.masterCrt .elipseA {
+    height: 40px;
+    width: 40px;
+    background: #f89e1b;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+.by {
+    font-family: 'Ubuntu', sans-serif;
+    position: fixed;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.by a {
+    text-decoration: none;
+    color: #fff;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.by a:hover {
+    color: #aaa;
+}
